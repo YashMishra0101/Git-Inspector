@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Chivo Mono', monospace;
+    overflow-x: hidden;
     
 }
 
@@ -48,7 +49,9 @@
 .moon-sun-image{
     width: 1.5rem;
     height: 1.5rem;
-    margin-right:2rem;
+    margin-right:3rem;
+    margin-left: 1rem;
+    margin-top:0.5rem;
 }
 
 .search-area{
@@ -78,11 +81,13 @@ input[type='text']{
 }
 
 .searchButton{
-  padding: 0.8rem 1rem;
+  padding:1rem;
+  padding-right:1.5rem;
   border-radius: 1rem;
   color: #0079ff;
   border: 2px solid  #0079ff;
   outline: none;
+ 
 }
 
 .searchButton:hover{
@@ -215,14 +220,17 @@ input[type='text']{
     margin-left: -1.3rem;
 }
 
+
 .userBioLink{
     overflow-wrap: break-word;
     width: 10.2rem;
     text-align: left;
 }
 
+
 .userTwitter-div{
-    margin-left: 2rem;
+    margin-left: 1.5rem;
+    margin-right:0.5rem;
 }
 
 h3{
@@ -238,6 +246,14 @@ h3{
         margin-right: 0.4rem;
     }
 
+    .userBio-link-div{
+        margin-right:3.2rem;
+    }
+
+    .userBio-link-div , .userTwitter-div{
+        margin-bottom: 1rem;
+    }
+
     .sub-info-container{
         width: 26rem;
         margin-right: 0.4rem;
@@ -251,35 +267,52 @@ h3{
          width:25rem;
     }
 
+    .searchButton{
+       padding-right:3rem;
+       margin-left: 1rem;
+    }
+
 }
 
 @media (max-width:380px){
     .search-area , .sub-info-container {
-     margin-left:2.9rem;
-     width: 23.5rem;
+     width: 22rem;
+     margin-right:0.8rem;
     
     }
 
     .sub-info-con-two , .sub-info-con-three{
-        width:23.5rem;
+        width:22rem;
+        margin-right:0.8rem;
    }
 
 }
+
 @media (max-width:320px){
     .search-area , .sub-info-container {
-     margin-left:4.9rem;
-     width: 23rem;
+     width: 19rem;
     
     }
 
-    .sub-info-con-two , .sub-info-con-three{
-        width:22.5rem;
+    .sub-info-con-two {
+        width:19rem;
    }
 
-   .header-area{
-    margin-left: 4rem;
+   .userBio-link-div{
+    margin-left:-3rem;
+    width: 12rem;
+   
    }
 
+   .searchButton{
+    padding:0.5rem;
+    padding-right:2rem;
+    border-radius: 1rem;
+    color: #0079ff;
+    border: 2px solid  #0079ff;
+    outline: none;
+   
+  }
 }
 
 
