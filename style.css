@@ -297,6 +297,16 @@ h3{
         margin-right:0.8rem;
    }
 
+   .error-page ,.error-page-two{
+    width: 20rem;
+    height: 20rem;
+   }
+
+   input[type='text']{
+    font-size: 1rem;
+ }
+
+
 }
 
 @media (max-width:320px){
@@ -311,16 +321,16 @@ h3{
    }
 
     .userTwitter-div {
-    display: flex;
-    flex-direction: column;
-}
+      display: flex;
+     flex-direction: column;
+    }
 
-.userTwitter{
+ .userTwitter{
     overflow-wrap: break-word;
     margin-left: 0.7rem;
     margin-top: 0.1rem;
     width: 10rem;
-}
+ }
 
    .searchButton{
     padding:0.5rem;
