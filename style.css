@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Chivo Mono', monospace;
     overflow-x: hidden;
+
     
 }
 
@@ -25,8 +26,6 @@
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color);
-    margin-bottom:1rem;
-    margin-top:0.5rem;
 
 }
  
@@ -38,20 +37,21 @@
 .sub-wrapper{
     width: 50rem;
     text-align: center;
+    margin-bottom:1rem;
+    margin-top:0.5rem;
 }
 
 .header-area{
     display: flex;
     justify-content:space-between;
-    margin: 1rem 1rem;
+    margin: 1rem 0;
 }
 
 .moon-sun-image{
     width: 1.5rem;
     height: 1.5rem;
-    margin-right:3rem;
-    margin-left: 1rem;
     margin-top:0.5rem;
+    margin-right:3rem;
 }
 
 .search-area{
@@ -211,8 +211,14 @@ input[type='text']{
     font-weight:lighter;
 }
 
-.userwork-icon , [data-userWork] , .userBioLink{
+.userwork-icon , [data-userWork]{
     margin-left:0.6rem;
+}
+.userBioLink{
+    margin-left: 0.3rem;
+}
+.userBio-link-div i{
+    margin-left: 0.5rem;
 }
 
 .userBio-link-div , .user-work-div{
@@ -223,14 +229,14 @@ input[type='text']{
 
 .userBioLink{
     overflow-wrap: break-word;
-    width: 10.2rem;
+    width: 11rem;
     text-align: left;
 }
 
 
 .userTwitter-div{
     margin-left: 1.5rem;
-    margin-right:0.5rem;
+    margin-right:1rem;
 }
 
 h3{
@@ -250,6 +256,13 @@ h3{
         margin-right:3.2rem;
     }
 
+    .userBioLink{
+        overflow-wrap: break-word;
+        width: 8rem;
+        text-align: left;
+        
+    }
+
     .userBio-link-div , .userTwitter-div{
         margin-bottom: 1rem;
     }
@@ -263,14 +276,12 @@ h3{
         display: flex;
         flex-direction: column;
     }
-    .sub-info-con-two , .sub-info-con-three{
-         width:25rem;
-    }
 
     .searchButton{
        padding-right:3rem;
        margin-left: 1rem;
     }
+
 
 }
 
@@ -289,20 +300,27 @@ h3{
 }
 
 @media (max-width:320px){
+
     .search-area , .sub-info-container {
      width: 19rem;
     
     }
 
-    .sub-info-con-two {
-        width:19rem;
+    .sub-info-con-two ,  .sub-info-con-three{
+        width:20rem;
    }
 
-   .userBio-link-div{
-    margin-left:-3rem;
-    width: 12rem;
-   
-   }
+    .userTwitter-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.userTwitter{
+    overflow-wrap: break-word;
+    margin-left: 0.7rem;
+    margin-top: 0.1rem;
+    width: 10rem;
+}
 
    .searchButton{
     padding:0.5rem;
@@ -313,6 +331,16 @@ h3{
     outline: none;
    
   }
+
+  
+  .topHeading{
+    margin-left:1rem;
+  }
+
+ .moon-sun-image{
+    margin-right:1rem;
+ }
+
 }
 
 

@@ -21,6 +21,8 @@ const error_page_two =document.querySelector('[data-error-page-two]');
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const root=document.documentElement.style;
 
+root.setProperty('--bg-color', 'white')
+
 const darkMode=()=>{
   root.setProperty('--bg-color','#2b3442');
   moonsun_image.src="./assets/images/sun-icon.svg"
