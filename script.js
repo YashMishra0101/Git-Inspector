@@ -73,7 +73,7 @@ const fetchData=async(user)=>{
     const date = String(createdAt.getDate()).padStart(2, '0');
     user_joining_date.innerHTML = `${year}-${month}-${date}`;
     use_repos.innerHTML=`${data.public_repos}`;
-    user_followers.innerHTML=`${data.follwers}`;
+    user_followers.innerHTML=`${data.followers}`;
     user_following.innerHTML=`${data.following}`;
     user_loc.innerHTML= data.location === null ? 'Not available' :`${data.location}`;
     user_bioLink.href=data.html_url === null ? 'Not available' : `${data.html_url}`;
