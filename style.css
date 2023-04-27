@@ -6,16 +6,12 @@
     box-sizing: border-box;
     font-family: 'Chivo Mono', monospace;
     overflow-x: hidden;
-
-    
 }
 
 :root{
     --bg-color:white;
     --color:white;
 }
-
-
 
 .wrapper{
     display: flex;
@@ -65,16 +61,15 @@
     background-color:rgb(81, 72, 142);
     margin-bottom: 1rem;
     
-    
-   
 }
 
-input[type='text']{
+.search-area input[type='text']{
    all: unset;
    font-size: 1.2rem;
    width: 50rem;
    border: none;
-   color: var(--color)
+   color: var(--color);
+   text-transform: lowercase;
    
 }
 
@@ -217,6 +212,7 @@ input[type='text']{
 }
 .userBio-link-div i{
     margin-left: 0.5rem;
+    
 }
 
 .userBio-link-div , .user-work-div{
@@ -350,7 +346,6 @@ h3{
    
   }
 
-  
   .topHeading{
     margin-left:1rem;
   }

@@ -22,6 +22,7 @@ const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "
 const root=document.documentElement.style;
 
 root.setProperty('--bg-color', 'white')
+moonsun_image.src="./assets/images/moon-icon.svg"
 
 const darkMode=()=>{
   root.setProperty('--bg-color','#2b3442');
@@ -34,7 +35,7 @@ const lightMode=()=>{
 }
 
 moonsun_image.addEventListener('click',()=>{
-  if(root.getPropertyValue('--bg-color')!=='white'){
+  if(root.getPropertyValue('--bg-color')!==('white')){
     lightMode();
   }
   else{
@@ -42,23 +43,27 @@ moonsun_image.addEventListener('click',()=>{
   }
 })
 
-async function fetchData(user) {
+const fetchData=async(user)=>{
+
   try {
     user_info.style.display='block'
     error_page.classList.remove('active')
     error_page_two.classList.remove('active')
     const response = await fetch(`https://api.github.com/users/${user}`);
+    console.log(response.status)
+    console.log(response.ok)
+    console.log(response)
     const data = await response.json();
     console.log(data)
     if(data.message==="Not Found"){
     input_field.value="Enter a valid name 😕";
     user_info.style.display='none'
     error_page_two.classList.add('active')
-
     }
+
     user_Name.innerHTML=`${data.name}`;
     user_Id.innerHTML=`@${data.login}`; 
-    user_Id.href=`https://github.com/${data.login}`;
+    user_Id.href=`${data.login}`;
     user_desc.innerHTML=data.bio===null ? 'This profile has no bio' : `${data.bio}`;
     user_image.src=`${data.avatar_url}`;
     user_joining_date.innerHTML = `${data.created_at}`;
@@ -68,7 +73,7 @@ async function fetchData(user) {
     const date = String(createdAt.getDate()).padStart(2, '0');
     user_joining_date.innerHTML = `${year}-${month}-${date}`;
     use_repos.innerHTML=`${data.public_repos}`;
-    user_followers.innerHTML=`${data.followers}`;
+    user_followers.innerHTML=`${data.follwers}`;
     user_following.innerHTML=`${data.following}`;
     user_loc.innerHTML= data.location === null ? 'Not available' :`${data.location}`;
     user_bioLink.href=data.html_url === null ? 'Not available' : `${data.html_url}`;
@@ -76,17 +81,19 @@ async function fetchData(user) {
     user_twitter.innerHTML=data.twitter_username=== null ? 'Not available' :`${data.twitter_username}`;
     user_Work.innerHTML=data.company === null ? 'Not available' :`${data.company}`;
   } 
+
   catch {
     input_field.value="Api is not working 😵‍💫🚑🥴";
     user_info.style.display='none'
     error_page.classList.add('active')
     error_page_two.classList.remove('active')
   }
+
 }
 
-const hkirat = "yashmishra0101";
+const default_user_id = "yashmishra0101";
 if(input_field.value===""){
-  fetchData(hkirat);
+  fetchData(default_user_id);
 }
  
 search_button.addEventListener('click', () =>{
@@ -98,7 +105,6 @@ search_button.addEventListener('click', () =>{
   else{
   const searchValue =input_field.value;
   fetchData(searchValue);  
-  search_button.style.pointerEvents ='auto';
   }
 });
 
