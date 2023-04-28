@@ -109,6 +109,12 @@ search_button.addEventListener('click', () =>{
 });
 
 
+input_field.addEventListener('keydown',(e)=>{
+  if(e.key==="Enter" && input_field !== ""){
+    fetchData(input_field.value);
+  }
+})
+
 
 
 
