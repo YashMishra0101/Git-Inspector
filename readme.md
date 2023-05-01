@@ -28,7 +28,7 @@ Note: By default, Git-Inspector displays information for the GitHub user with th
 
 # Getting Started
 
-To get started with this weather app, follow these steps:
+To get started with this GitInspector project, follow these steps:
 
 1. Clone the repository to your local machine using the command: git clone https://github.com/YashMishra0101/Git-Inspector
 2. Navigate to the project directory: `cd GitInspector`
