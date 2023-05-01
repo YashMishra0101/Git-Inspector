@@ -8,9 +8,9 @@ Git-Inspector is a web application that allows you to search for GitHub users an
 
 Note: By default, Git-Inspector displays information for the GitHub user with the username "yashmishra0101" (which is myself).
 
-## 🌐 Live Demo
+## 🌐 Project Demo 
 
-You can see a live demo of the project at https://yashmishra-gitinspector.netlify.app/
+To see a live demo of the project, please visit : https://yashmishra-gitinspector.netlify.app/
 
 ## Features
 
