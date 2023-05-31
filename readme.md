@@ -1,8 +1,8 @@
 # Git-Inspector
 
-<img src="./assets/images/Screenshot (261).png">
-<img src="./assets/images/Screenshot (263).png">
-<img src="./assets/images/Screenshot (264).png">
+![Screenshot](./assets/images/Screenshot%20(261).png)
+![Screenshot](./assets/images/Screenshot%20(263).png)
+![Screenshot](./assets/images/Screenshot%20(264).png)
 
 Git-Inspector is a web application that allows you to search for GitHub users and view their basic information such as user profile, user ID, name, bio, followers, following, public repositories, Twitter account name, current working company, GitHub joining date, and more. The application also includes a dark mode feature for better user experience.
 
