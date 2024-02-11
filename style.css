@@ -274,12 +274,17 @@ h3{
     .searchButton{
        padding-right:3rem;
        margin-left: 1rem;
+       width: 1rem;
     }
 
     .sub-info-con-two , .sub-info-con-three{
         width: 25rem;
     }
+    
+    .sub-wrapper{
+        margin-left:1rem;
 
+    }
 
 }
 
@@ -343,7 +348,6 @@ h3{
     color: #0079ff;
     border: 2px solid  #0079ff;
     outline: none;
-   
   }
 
   .topHeading{
