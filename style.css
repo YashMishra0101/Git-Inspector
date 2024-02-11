@@ -239,83 +239,137 @@ h3{
     line-height: 2;
 }
 
+
 @media (max-width:450px) {
     .search-area{
         width: 26rem;
+        margin-right: 0.4rem;
     }
 
     .userBio-link-div{
-        margin-right:1.2rem; 
+        margin-right:3.2rem;
     }
 
     .userBioLink , .userTwitter , .userWork , .userLoc{
-        width: 8rem; 
+        overflow-wrap: break-word;
+        width: 8rem;
+        text-align: left;
+        
+    }
+
+    .userBio-link-div , .userTwitter-div{
+        margin-bottom: 1rem;
     }
 
     .sub-info-container{
         width: 26rem;
+        margin-right: 0.4rem;
+    }
+
+    .sub-info-con-one{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .searchButton{
+       padding-right:3rem;
+       margin-left: 1rem;
     }
 
     .sub-info-con-two , .sub-info-con-three{
         width: 25rem;
     }
 
-    
+
 }
 
 @media (max-width:380px){
     .search-area , .sub-info-container {
-        width: 22rem;
+     width: 22rem;
+     margin-right:0.8rem;
+    
     }
 
     .sub-info-con-two , .sub-info-con-three{
         width:22rem;
-    }
+        margin-right:0.8rem;
+   }
 
-    .error-page ,.error-page-two{
-        width: 20rem;
-        height: 20rem;
-    }
+   .error-page ,.error-page-two{
+    width: 20rem;
+    height: 20rem;
+   }
 
-    input[type='text']{
-        font-size: 1rem; 
-    }
+   input[type='text']{
+    font-size: 1rem;
+ }
 
-    
+ .sub-info-con-two , .sub-info-con-three{
+    width: 20rem;
+}
+
+
+.userTwitter-div {
+    display: flex;
+   flex-direction: column;
+  }
+
+  .userTwitter{
+    overflow-wrap: break-word;
+    margin-left: 2rem;
+    margin-top: 0.1rem;
+    width: 10rem;
+ }
+
+
 }
 
 @media (max-width:320px){
+
     .search-area , .sub-info-container {
-        width: 19rem;
+     width: 19rem;
+    
     }
 
     .sub-info-con-two ,  .sub-info-con-three{
         width:20rem;
-    }
+   }
 
-    .searchButton{
-        padding-right:2rem; 
-    }
 
-    .topHeading{
-        margin-left:1rem; 
-    }
+   .searchButton{
+    padding:0.5rem;
+    padding-right:2rem;
+    border-radius: 1rem;
+    color: #0079ff;
+    border: 2px solid  #0079ff;
+    outline: none;
+   
+  }
 
-    .moon-sun-image{
-        margin-right:1rem; 
-    }
+  .topHeading{
+    margin-left:1rem;
+  }
 
-    .sub-info-con-two , .sub-info-con-three{
-        width: 18.5rem;
-    }
+ .moon-sun-image{
+    margin-right:1rem;
+ }
+ .sub-info-con-two , .sub-info-con-three{
+    width: 18.5rem;
+}
 
-    .userTwitter {
-        margin-left: 2.6rem; 
-    }
+.userTwitter {
+    overflow-wrap: break-word;
+    margin-left: 2.6rem;
+    margin-top: 0.2rem;
+    width: 10rem;
+ }
 
-    .userLoc{
-        margin-left:2.5rem; 
-    }
+ .userLoc{
+    margin-top:0.5rem;
+    margin-left:2.5rem;
+ }
+
+}
+
 
    
-}
